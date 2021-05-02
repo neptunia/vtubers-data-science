@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vtubers and Superchats - Data Science</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>final_project_full_file</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14264,6 +14264,12 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>If you want to follow along, the associated files are hosted <a href="https://github.com/neptunia/vtubers-data-science">here</a>.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h1><ol>
 <li><a href="#intro">Introduction</a><ol>
 <li><a href="#what">What are Vtubers?</a></li>
@@ -14307,7 +14313,7 @@ a.anchor-link {
 <!-- <iframe width="1253" height="705" src="https://www.youtube.com/embed/1endAJC_CC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 <p><img src="https://pbs.twimg.com/media/EpTQi1dWEAgVyYX?format=jpg&amp;name=medium" alt="stats"></p>
-<p>These Vtubers primarily make money through memberships where viewers can pay to get certain perks, and through <a href="https://creatoracademy.youtube.com/page/lesson/superchat-and-superstickers_what-is-superchat_video">superchats</a> where users can pay money to highlight their message. (Joining a membership can also have a message associated with it, so they are classified as superchats as well). This is big business - at my time of writing (5/1/2021), 15 of the top 20 most superchatted channels worldwide were those of Vtubers (<a href="https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-total">https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-total</a>). Furthermore, the top Vtubers make upwards of \$1,000,000 USD in superchat revenue in 2020, and the top 193 channels all made over \$100,000 USD (again, many of whom were Vtubers). (Of course, not all of this money goes directly to the Vtuber - YouTube themselves, and the agency the Vtuber works for [if any], both take a cut).</p>
+<p>These Vtubers primarily make money through memberships where viewers can pay to get certain perks, and through <a href="https://creatoracademy.youtube.com/page/lesson/superchat-and-superstickers_what-is-superchat_video">superchats</a> where users can pay money to highlight their message. (Joining a membership can also have a message associated with it, so they are classified as superchats as well). This is big business - at my time of writing (5/1/2021), 15 of the top 20 most superchatted channels worldwide were those of Vtubers (<a href="https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-total">https://playboard.co/en/youtube-ranking/most-superchatted-all-channels-in-worldwide-total</a>). Furthermore, the top Vtubers make upwards of \$1,000,000 USD in superchat revenue in 2020, and the top 193 channels all made over \\$100,000 USD (again, many of whom were Vtubers). (Of course, not all of this money goes directly to the Vtuber - YouTube themselves, and the agency the Vtuber works for [if any], both take a cut).</p>
 <p>In this project, I aim to analyze the superchat earnings of various Vtubers, and hope to see if I can find any trends or indicators that might correlate with higher superchat earnings.</p>
 <h2 id="Why-care?">Why care?<a name="why" /><a class="anchor-link" href="#Why-care?">&#182;</a></h2><p>As stated earlier, Vtubers are a growing business (from 2000 active Vtubers in May 2018 to over 10,000 in January 2020), and there are many people who hope to become Vtubers. The industry is so profitable that agencies have been formed to manage them. Both current and aspiring Vtubers thus stand to gain from knowing how to maximize their superchat earnings, or predict how much they might make based on how they plan to stream. This analysis aims to provide insight into both of those aspects. For fans, I feel that knowing this data is interesting in and of itself, and others have done studies regarding vtubers for fun. For example, one reddit user conducted a study of <a href="https://www.reddit.com/r/Hololive/comments/l2f9en/which_member_gets_the_most_english_chat_messages/">the languages used in various vtubers' chats</a>. I hope to also post this study to reddit and get gilded.</p>
 <p>This study could also probably be extended to non-vtuber streamers, to potentially increase the audience for who finds this data useful.</p>
@@ -14400,7 +14406,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># all the imports</span>
@@ -14849,7 +14855,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">c_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_hdf</span><span class="p">(</span><span class="s2">&quot;./h5s/vtubers.h5&quot;</span><span class="p">)</span>
@@ -14873,7 +14879,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -15063,7 +15069,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_hdf</span><span class="p">(</span><span class="s1">&#39;h5s/joined.h5&#39;</span><span class="p">)</span>
@@ -15083,7 +15089,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[88]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -15240,7 +15246,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined</span><span class="p">[</span><span class="s1">&#39;timestamps&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">joined</span><span class="p">[</span><span class="s1">&#39;timestamps&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">1000000</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">])</span>
@@ -15260,7 +15266,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -15417,7 +15423,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined</span><span class="p">[</span><span class="s1">&#39;published_at&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">joined</span><span class="p">[</span><span class="s1">&#39;published_at&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">parser</span><span class="o">.</span><span class="n">isoparse</span><span class="p">)</span>
@@ -15433,7 +15439,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">joined</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15452,7 +15458,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[85]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15613,7 +15619,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">ind</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">joined</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
@@ -15656,7 +15662,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 
 
 
@@ -16049,7 +16055,7 @@ $$H_1: \textrm{There is some sort of relationship between any of the factors we 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Correlation-between-time-of-day-and-superchats">Correlation between time of day and superchats<a name="tod" /><a class="anchor-link" href="#Correlation-between-time-of-day-and-superchats">&#182;</a></h2><p>Although the initial correlation matrix didn't really seem to show any correlation between the time of day of streams and the amount of superchats sent, there still might be a relationship. Streams usually last for at least an hour, with many being 6+ hours long, and this data is not initially reflected in our dataframe. So a 12-hour-long stream might have the majority of the superchats concentrated in the evening, and this would not be indicated in the correlation matrix. We did take timestamps of each individual superchat, though, so we can manually plot them out and see.</p>
-<p>Unfortunately, I did not scrape individual dollar values of each superchat (only the sum for a given stream), which is sort of a regret but as I am not keen on running the scraping code for another two days we will make do with only the number of superchats for this (rather than dollar amounts). Most superchats average around \$5-\$10 anyways, and outlier "red superchats" worth \$100+ are few and presumably very hard to predict, so this might be for the better anyways. Future work could also scrape individual superchat amounts if desired.</p>
+<p>Unfortunately, I did not scrape individual dollar values of each superchat (only the sum for a given stream), which is sort of a regret but as I am not keen on running the scraping code for another two days we will make do with only the number of superchats for this (rather than dollar amounts). Most superchats average around \$5-\\$10 anyways, and outlier "red superchats" worth \$100+ are few and presumably very hard to predict, so this might be for the better anyways. Future work could also scrape individual superchat amounts if desired.</p>
 <p>Note that "time of day" varies around the world. While most of the Vtubers I chose to put in this dataset are tailored for Japanese audiences (and a few Indonesian, but the time zones for that are similar enough), there are also a few (5) targeted towards Western audiences. In this case, I feel it would be prudent to split them into two groups: Hololive EN (tailored for Western audiences), and not Hololive EN (for everyone else). Let's start with the non-EN group for now, since we will have more data there.</p>
 
 </div>
@@ -16426,7 +16432,7 @@ $$H_1: \textrm{There is some sort of relationship between any of the factors we 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Now this is very interesting! We can see a few interesting trends here:</p>
 <ul>
-<li>We can sort of see a horizontal line of points near \$5 superchat earnings, and another horizontal line near \$10. These probably indicate streams where only 1 or 2 people superchatted during the stream, since buying a membership costs \$5 USD and a common amount for superchats is 500 yen (which is approximately \$5 USD as well).</li>
+<li>We can sort of see a horizontal line of points near \$5 superchat earnings, and another horizontal line near \\$10. These probably indicate streams where only 1 or 2 people superchatted during the stream, since buying a membership costs \$5 USD and a common amount for superchats is 500 yen (which is approximately \\$5 USD as well).</li>
 <li>There certainly seems to be an upwards linear trend on this graph.</li>
 </ul>
 <p>Let's try doing a regression on this data to see if we can find out exactly what this trend is!</p>
@@ -17588,13 +17594,18 @@ num_points: 36
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Machine-Learning">Machine Learning<a name="ml" /><a class="anchor-link" href="#Machine-Learning">&#182;</a></h1><p>Let's see if machine learning can use multiple of the factors we've looked at and seen some correlation with to accurately model the amount of superchat earnings a stream will make! We'll use <code>video_length</code>, <code>viewcount</code> (normalized), <code>is_gaming</code>, and <code>vtuber_ordinal</code> to predict <code>val_superchats</code> (normalized).</p>
+<h1 id="Machine-Learning">Machine Learning<a name="ml" /><a class="anchor-link" href="#Machine-Learning">&#182;</a></h1><p>Let's see if machine learning can use multiple of the factors we've looked at and seen some correlation with to accurately model the amount of superchat earnings a stream will make!</p>
+<p>First up is deciding the type of model we want to use. Since we want to predict a quantity, we want to use regression. scikit-learn provides a graphic for which algorithms to use:</p>
+<p><img src="https://scikit-learn.org/stable/_static/ml_map.png" alt="sklearn algo cheat sheet"></p>
+<p>From our previous findings, there weren't too many factors that seemed to make a big impact on superchat earnings. We'll use <code>video_length</code>, <code>viewcount</code> (normalized), <code>is_gaming</code>, and <code>vtuber_ordinal</code> to predict <code>val_superchats</code> (normalized). According to the chart, we should use <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html"><code>Lasso</code></a> or <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html"><code>ElasticNet</code></a><sup>1</sup>, but I actually tried both of them and neither of them provided as good of a result as plain old linear regression (which is equivalent to <code>Lasso(alpha=0)</code>. Thus, we will just use a <code>LinearRegression</code> on these variables.</p>
+<p>While it is possible that we could perhaps transform the variables further, such as through a <a href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler"><code>StandardScaler</code></a> to scale our data to mean 0 and variance 1, in order to improve our regression (and make it work better with Lasso or ElasticNet), this comes with big drawbacks. It might become a lot harder to interpret the results of our regression, and ultimately less informative about the result as a whole. Right now, the only transformation we have is taking the log of the viewcount and the log of the superchat value: so to transform it back, you just take <code>exp(value)</code>. This is still very understandable for humans. However, if we were to scale the data to unit variance and shift all the data around, it would be a lot harder to make sense of. For this reason, we will not apply any further preprocessing.</p>
+<p><sup>1</sup> Essentially, Lasso and ElasticNet build upon the standard LinearRegression (which uses ordinary least squares as its loss function to minimize), where they use the $\ell_1$ norm (Lasso) or both the  $\ell_1$ and $\ell_2$ norms (ElasticNet) in the loss function as well. Learn more <a href="https://scikit-learn.org/stable/modules/linear_model.html">here</a>.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sklearn.linear_model</span>
@@ -17606,8 +17617,8 @@ num_points: 36
 <span class="n">to_ml</span> <span class="o">=</span> <span class="n">to_ml</span><span class="p">[</span><span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;val_superchats&#39;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;viewcount&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;viewcount&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">)</span>
 <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;val_superchats&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;val_superchats&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">)</span>
-<span class="c1"># i normalized this ordinal, but since this is just a categorical variable normalizing it doesn&#39;t matter for our regression</span>
-<span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;vtuber_ordinal&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;vtuber_ordinal&#39;</span><span class="p">]</span><span class="o">/</span><span class="mi">45</span>
+
+<span class="c1"># we don&#39;t need to scale ordinal or categorical variables in a linear regression</span>
 
 <span class="c1"># the value we want to predict</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">to_ml</span><span class="p">[</span><span class="s1">&#39;val_superchats&#39;</span><span class="p">]</span>
@@ -17630,7 +17641,7 @@ num_points: 36
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[81]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 
 
 
@@ -17666,7 +17677,7 @@ num_points: 36
       <td>141.150000</td>
       <td>11.271172</td>
       <td>1</td>
-      <td>1.0</td>
+      <td>45</td>
       <td>6</td>
     </tr>
     <tr>
@@ -17674,7 +17685,7 @@ num_points: 36
       <td>131.866667</td>
       <td>12.019695</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>45</td>
       <td>6</td>
     </tr>
     <tr>
@@ -17682,7 +17693,7 @@ num_points: 36
       <td>171.683333</td>
       <td>12.130708</td>
       <td>1</td>
-      <td>1.0</td>
+      <td>45</td>
       <td>6</td>
     </tr>
     <tr>
@@ -17690,7 +17701,7 @@ num_points: 36
       <td>33.783333</td>
       <td>11.649849</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>45</td>
       <td>6</td>
     </tr>
     <tr>
@@ -17698,7 +17709,7 @@ num_points: 36
       <td>59.600000</td>
       <td>11.228930</td>
       <td>0</td>
-      <td>1.0</td>
+      <td>45</td>
       <td>6</td>
     </tr>
   </tbody>
@@ -17715,7 +17726,7 @@ num_points: 36
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span>
@@ -17734,7 +17745,7 @@ num_points: 36
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
 
@@ -17763,7 +17774,7 @@ Name: val_superchats, Length: 2157, dtype: float64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -17809,8 +17820,8 @@ Name: val_superchats, Length: 2157, dtype: float64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[ 0.00328273  0.31500079 -0.78465816  1.08290011  0.14428761]
-1.1508926086303992
+<pre>[ 0.00328273  0.31500079 -0.78465816  0.02406445  0.14428761]
+1.1508926086303957
 Regression r^2 on training data: 0.355851
 Regression r^2 on test data: 0.351916
 </pre>
@@ -17824,7 +17835,10 @@ Regression r^2 on test data: 0.351916
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Recall the $r^2$ of our simpler, non-ML regression earlier (based only off view count) had a $r^2$ of about 0.25 (and it used the entire dataset!) While the $r^2$ of our new model is still somewhat low, at ~0.35, it is certainly better than before, and it only used 75% of the data to train on. We would not expect a very high score anyways, since human behavior is unpredictable. Overall, our machine learning model is indeed a better model for Vtuber earnings.</p>
+<p>Essentially, what this model is saying is,</p>
+$$\log(\textrm{Superchat Earnings}) = 0.0033(\textrm{video_length}) + 0.315 \log(\textrm{viewcount}) - 0.785 (\textrm{is_gaming}) + 0.024(\textrm{vtuber_ordinal}) + 0.144(\textrm{affiliation_ordinal})$$<p>(Where log is the natural logarithm, video length is measured in minutes, and the other 3 ordinals are as defined earlier. If a Vtuber who was not used in this dataset wanted to also use this function, they would estimate their own ordinals based on their own subscriber count and their affiliated agency's popularity).</p>
+<p>This is still quite easy for us to plug values in and get a good estimate - this would be a lot harder if we had done more transformations on our parameters.</p>
+<p>Furthermore, recall the $r^2$ of our simpler, non-ML regression earlier (based only off view count) had a $r^2$ of about 0.25 (and it used the entire dataset!) While the $r^2$ of our new model is still somewhat low, at ~0.35, it is certainly better than before, and it only used 75% of the data to train on. We would not expect a very high score anyways, since human behavior is unpredictable. Overall, our machine learning model is indeed a better model for Vtuber earnings.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -18076,7 +18090,8 @@ Regression r^2 on test data: 0.335115
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>So even with only knowledge of <code>video_length</code>, <code>is_gaming</code>, <code>vtuber_ordinal</code>, and <code>affiliation_ordinal</code> (essentially, which Vtuber one is and what group they belong to), we can get almost as good of a regression! This is important because a Vtuber might be able to estimate how much they will make, given what topic/game they plan on streaming and how long they want to stream for.</p>
+<p>So this model gives us the equation:</p>
+$$\log(\textrm{Superchat Earnings}) = 0.0037(\textrm{video_length}) - 0.83 (\textrm{is_gaming}) + 1.895(\textrm{vtuber_ordinal}) + 0.15(\textrm{affiliation_ordinal})$$<p>So even with only knowledge of <code>video_length</code>, <code>is_gaming</code>, <code>vtuber_ordinal</code>, and <code>affiliation_ordinal</code> (essentially, which Vtuber one is and what group they belong to), we can get almost as good of a regression! This is important because a Vtuber might be able to estimate how much they will make only given what topic/game they plan on streaming and how long they want to stream for.</p>
 
 </div>
 </div>
@@ -18086,7 +18101,7 @@ Regression r^2 on test data: 0.335115
 <ul>
 <li>Peak hours are near midnight of whatever the target audience is</li>
 <li>Fewer superchats come in during workday hours, and more come in after midnight (relative to the number of streams live at the time)</li>
-<li>View count and superchat earnings are polynomially correlated (generally with degree less than 1); over the streams we analyzed the correlation was $y = 0.0663126 x^{0.758142}$ (y is superchat revenue, x is number of views)<ul>
+<li>View count and superchat earnings are polynomially correlated (generally with degree less than 1 - <strong>sublinear</strong>); over the streams we analyzed the correlation was $y = 0.0663126 x^{0.758142}$ (y is superchat revenue, x is number of views)<ul>
 <li>This simple regression had $r^2 \approx 0.25$</li>
 <li>Video game streams generally make less money than other streams, but potentially make more with higher views (had a higher exponent on x)</li>
 </ul>
@@ -18109,20 +18124,221 @@ Regression r^2 on test data: 0.335115
 </ul>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Vtubers-list">Vtubers list<a class="anchor-link" href="#Vtubers-list">&#182;</a></h2><p>This is a list of all the Vtubers I used in my dataset, with links to their channels. It is sorted in descending order of subscribers.<sup>Sorry if your favorite isn't here!</sup></p>
+<table>
+<thead><tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Affiliation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC4YaOt1yT-ZeyB0OmxHgolA">A.I.Channel</a></td>
+<td style="text-align:left">independent</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g">Gawr Gura Ch. hololive-EN</a></td>
+<td style="text-align:left">hololive_en</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q">Korone Ch. 戌神ころね</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ">Pekora Ch. 兎田ぺこら</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg">フブキCh。白上フブキ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg">Mori Calliope Ch. hololive-EN</a></td>
+<td style="text-align:left">hololive_en</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg">Marine Ch. 宝鐘マリン</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg">Aqua Ch. 湊あくあ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg">Watson Amelia Ch. hololive-EN</a></td>
+<td style="text-align:left">hololive_en</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ">Rushia Ch. 潤羽るしあ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg">HAACHAMA Ch. 赤井はあと</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w">Coco Ch. 桐生ココ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ">Noel Ch. 白銀ノエル</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw">Okayu Ch. 猫又おかゆ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCQ0UDLQCjY0rmuxCDE38FGg">Matsuri Channel 夏色まつり</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww">Takanashi Kiara Ch. hololive-EN</a></td>
+<td style="text-align:left">hololive_en</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg">Ninomae Ina'nis Ch. hololive-EN</a></td>
+<td style="text-align:left">hololive_en</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A">Suisei Channel</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA">Subaru Ch. 大空スバル</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA">Watame Ch. 角巻わため</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCZlDXzGoo7d44bwdNObFacg">Kanata Ch. 天音かなた</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCUKD-uaobj9jiqB-VXt71mA">Botan Ch.獅白ぼたん</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg">SoraCh. ときのそらチャンネル</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCD-miitqNY3nyukJ4Fnf4_A">月ノ美兎</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCp-5t9SrOQwXMU7iIjQfARg">Mio Channel 大神ミオ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg">Moona Hoshinova hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC0g1AE0DOjBYnLhkgoRWN1w">本間ひまわり - Himawari Honma -</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC8NZiqKx6fsDT3AVcMiVFyA">犬山たまき / 佃煮のりおチャンネル</a></td>
+<td style="text-align:left">independent</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC1uv2Oq6kNxgATlCiez59hw">Towa Ch. 常闇トワ</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA">Nene Ch.桃鈴ねね</a></td>
+<td style="text-align:left">hololive</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCYz_5n-uDuChHtLo7My1HnQ">Kureiji Ollie Ch. hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w">鈴原るる【にじさんじ所属】</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCZ1xuCK1kNmn5RzPYIZop3w">リゼ・ヘルエスタ -Lize Helesta-</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCdpUojq0KWZCN9bxXnZwz5w">アルス・アルマル -ars almal- 【にじさんじ】</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCXRlIK3Cw_TJIQC5kSJJQMg">戌亥とこ -Inui Toko-</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw">Ayunda Risu Ch. hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCPvGypSgfDkVe7JG2KygK7A">竜胆 尊 / Rindou Mikoto</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCajhBT4nMrg3DLS-bLL2RCg">天野ピカミィ. Pikamee</a></td>
+<td style="text-align:left">voms</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q">Pavolia Reine Ch. hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg">Airani Iofifteen Channel hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCV5ZZlLjk5MKGg3L0n0vbzw">鷹宮リオン / Rion Takamiya</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCCVwhI5trmaSxfcze_Ovzfw">夢月ロア🌖Yuzuki Roa</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC727SQYUvx5pDDGQpTICNWg">Anya Melfissa Ch. hololive-ID</a></td>
+<td style="text-align:left">hololive_id</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC9EjSJ8pvxtvPdxLOElv73w">魔界ノりりむ</a></td>
+<td style="text-align:left">nijisanji</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC22BVlBsZc6ta3Dqz75NU6Q">ぽちまる:POCHI-GOYA channel</a></td>
+<td style="text-align:left">independent</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCANDOlYTJT7N5jlRC3zfzVA">Roberu Ch. 夕刻ロベル</a></td>
+<td style="text-align:left">holostars</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UC3vzVK_N_SUVKqbX69L_X4g">緋笠トモシカ - Tomoshika Hikasa -</a></td>
+<td style="text-align:left">voms</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UChSvpZYRPh0FvG4SJGSga3g">Shien Ch.影山シエン</a></td>
+<td style="text-align:left">holostars</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCmgWMQkenFc72QnYkdxdoKA">ピーナッツくん!オシャレになりたい!</a></td>
+<td style="text-align:left">independent</td>
+</tr>
+<tr>
+<td style="text-align:left"><a href="https://www.youtube.com/channel/UCKeAhJvy8zgXWbh9duVjIaQ">Aruran Ch. アルランディス</a></td>
+<td style="text-align:left">holostars</td>
+</tr>
+</tbody>
+</table>
 
-     </div>
 </div>
-</div>
-</div>
-
 </div>
 </body>
 
