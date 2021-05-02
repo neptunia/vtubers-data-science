@@ -14291,7 +14291,8 @@ a.anchor-link {
 </ol>
 </li>
 <li><a href="#ml">Machine Learning</a></li>
-<li><a href="#summ">Takeaways</a></li>
+<li><a href="#summ">Summary/Conclusions</a></li>
+<li><a href="#pfw">Possible Future Work</a></li>
 </ol>
 
 </div>
@@ -14323,25 +14324,83 @@ a.anchor-link {
 <p>Unfortunately I did not have the foresight to retain the currency data or the individual dollar values of each superchat.</p>
 <p><code>get_last_50_videos</code> will return a list of the last 50 videos for a given vtuber's channel, of which the return value will be fed into <code>get_all_vids_details</code> and subsequently <code>get_video_details</code> to return some metadata for each video.</p>
 <p>The data we will be logging are the following fields:</p>
-<p><code>video_name</code>: The title of the video<sup>1</sup></p>
-<p><code>video_id</code>: Youtube's id for the video</p>
-<p><code>description</code>: The description of the video, as written by the Vtuber<sup>1</sup></p>
-<p><code>published_at</code>: The time at which the livestream video was subsequently published after ending (usually not the actual start time)<sup>1</sup></p>
-<p><code>video_start_time</code>: The time at which the livestream actually started</p>
-<p><code>video_end_time</code>: The time at which the livestream actually ended</p>
-<p><code>num_superchats</code>: The amount of individual superchats received in a video</p>
-<p><code>val_superchats</code>: The total value of superchats received in a video, in USD</p>
-<p><code>locale</code>: Supposedly the language in which the video was made, but seems inaccurate<sup>1</sup></p>
-<p><code>viewcount</code>: The number of views the video received. Note that this includes views after the livestream ended and were watched as a video, but this amount is comparatively very small so we can assume it is just the livestream viewers.</p>
-<p><code>tags</code>: The tags that YouTube has assigned the video (gaming, entertainment, etc)</p>
-<p><code>timestamps</code>: Timestamps for each individual superchat in the video</p>
-<p><sup>1</sup> This field ended up not actually being used in the analysis.</p>
+<table>
+<thead><tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Ended up being used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>video_name</code></td>
+<td style="text-align:left">The title of the video</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>video_id</code></td>
+<td style="text-align:left">Youtube's id for the video</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>description</code></td>
+<td style="text-align:left">The description of the video, as written by the Vtuber</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>published_at</code></td>
+<td style="text-align:left">Youtube's id for the video</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>video_start_time</code></td>
+<td style="text-align:left">The time at which the livestream actually started</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>video_end_time</code></td>
+<td style="text-align:left">The time at which the livestream actually ended</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>num_superchats</code></td>
+<td style="text-align:left">The amount of individual superchats received in a video</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>val_superchats</code></td>
+<td style="text-align:left">The total value of superchats received in a video, in USD</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>locale</code></td>
+<td style="text-align:left">Supposedly the language in which the video was made, but seems inaccurate</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>viewcount</code></td>
+<td style="text-align:left">The number of views the video received.<sup>1</sup></td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>tags</code></td>
+<td style="text-align:left">The tags that YouTube has assigned the video (gaming, entertainment, etc)</td>
+<td style="text-align:left">&check;</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>timestamps</code></td>
+<td style="text-align:left">Timestamps for each individual superchat in the video</td>
+<td style="text-align:left">&check;</td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup>  Note that this includes views after the livestream ended and were watched as a video, but this amount is comparatively very small so we can assume it is just the livestream viewers.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># all the imports</span>
@@ -15544,7 +15603,11 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It'll also probably help for us to have the length of each video down the line. We can subtract the start time from the end time of the video very easily now that they're datetime objects, and then populate the column accordingly. We also need to convert some columns that look numeric - but are actually represented by strings - into numeric values. Finally, we make a few more columns that reflect the data from other rows, but numerically so that we can work with them more easily. With that, our data representations are complete, and we can move on to exploratory data analysis!</p>
+<p>It'll also probably help for us to have the length of each video down the line. We can subtract the start time from the end time of the video very easily now that they're datetime objects, and then populate the column accordingly. We also need to convert some columns that look numeric - but are actually represented by strings - into numeric values.</p>
+<p>Finally, we make a few more columns that reflect the data from other rows, but numerically so that we can work with them more easily. For example, we create an <code>is_gaming</code> column based on the tag data (similar to how we looked for streams to web scrape for the game title), with a value of 1 if it was a gaming stream and 0 if not. This is called a categorical variable - each stream either falls into the category or not, and there isn't really an ordering between if it is a gaming stream or not. We also make a <code>vtuber_ordinal</code> and <code>affiliation_ordinal</code> for each vtuber, based on their subscriber count and agency affiliation, respectively. Vtubers with lower subscriber counts would receive a smaller ordinal number, and ones with higher subscriber counts would get a higher number (based on their ranking among all 50 of the Vtubers in my dataset). Similarly, I ordered the agency affiliations by my best estimate of their size and popularities, with more popular agencies receiving higher affiliation ordinals. As implied by their column names, these are ordinal variables - similar to categorical variables, except now there is a clear ordering between each of the categories (popularity).</p>
+<blockquote><p><a href="https://stats.idre.ucla.edu/other/mult-pkg/whatstat/what-is-the-difference-between-categorical-ordinal-and-interval-variables/">Here</a> is a useful resource to learn more about the differences between the kinds of variables we use.</p>
+</blockquote>
+<p>With that, our data representations are complete, and we can move on to exploratory data analysis!</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -18023,8 +18086,9 @@ Regression r^2 on test data: 0.335115
 <ul>
 <li>Peak hours are near midnight of whatever the target audience is</li>
 <li>Fewer superchats come in during workday hours, and more come in after midnight (relative to the number of streams live at the time)</li>
-<li>View count and superchat earnings are polynomially correlated (generally with degree less than 1); over the streams we analyzed the correlation was $y = 0.0663126 x^{0.758142}$<ul>
+<li>View count and superchat earnings are polynomially correlated (generally with degree less than 1); over the streams we analyzed the correlation was $y = 0.0663126 x^{0.758142}$ (y is superchat revenue, x is number of views)<ul>
 <li>This simple regression had $r^2 \approx 0.25$</li>
+<li>Video game streams generally make less money than other streams, but potentially make more with higher views (had a higher exponent on x)</li>
 </ul>
 </li>
 <li>We were able to train a model using a Vtuber's affiliation, ordinal ranking (based off subscriber count), the length of their stream, if it was gaming or not, and (optionally) a view count to somewhat accurately predict the superchat earnings for the video<ul>
@@ -18038,13 +18102,27 @@ Regression r^2 on test data: 0.335115
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Future-Possibilities">Future Possibilities<a class="anchor-link" href="#Future-Possibilities">&#182;</a></h1><ul>
+<h1 id="Future-Possibilities">Future Possibilities<a name="pfw" /><a class="anchor-link" href="#Future-Possibilities">&#182;</a></h1><ul>
 <li>Does the day of the week of the stream affect superchat earnings? This is very similar to the things done already, and can be done with the data I collected. I did not do this because I did not want to make this tutorial any longer than it already is.</li>
 <li>Do more research into individual superchat sizes, and viewer nationalities based on currency data. Sadly I did not collect this information.</li>
 <li>What is the impact of collaborations or special event streams (milestones, outfit reveals, etc) on superchats? While I left a few such streams in and they seem to fit with the log-log model made in the Exploratory Data Analysis section (since they have a lot more viewers and a lot more superchats), it would be interesting to see data studying just these special streams. I did not have a way of tagging streams as such, and it would probably require parsing video titles/descriptions or manual tagging. </li>
 </ul>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
